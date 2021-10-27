@@ -1,0 +1,18 @@
+/*Grid layout*/
+/*https://www.w3schools.com/css/css_grid.asp*/
+
+.grid-layout{
+    background-image: url("https://cdn.tricycle.org/wp-content/uploads/2019/08/watsuji.jpg");
+	display:grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding:10px;
+}
+
+.grid-layout > div{
+	text-align: center;
+	/*vertical-align: center;*/
+	margin: auto;
+	padding:20px, 0;
+}
+
