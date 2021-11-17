@@ -10,7 +10,7 @@ theButton.addEventListener('click', myFunction)
 function myFunction(){
     console.log("button clicked!!");
     theBody.style.color = "Black";
-    theBody.style.backgroundColor = "White";
+//    theBody.style.backgroundColor = "Black";
     thePara.textContent = "Poof!!"
     theButton.style.visibility = "hidden";
     theHeadline.style.visibility = "hidden";
