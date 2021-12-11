@@ -1,0 +1,29 @@
+/* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+#alice {
+  margin: 0;
+  position: absolute;
+  height: 200px;
+  width: auto;
+  top: 40%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* https://www.tech-wiki.online/en/rotate-image.html */
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+body {                                                                          
+    background-image: url('images/the_face.jpeg')
+}  
