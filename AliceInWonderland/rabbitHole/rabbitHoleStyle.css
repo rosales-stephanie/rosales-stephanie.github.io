@@ -1,0 +1,85 @@
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+body {
+  background: url(../images/rabbit-hole.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#dina {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  top: 0%;
+  left: 0%;
+}
+
+#alice {
+  position: absolute;
+  height: 500px;
+  width: auto;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#alice.rotate {
+  position: absolute;
+  height: 500px;
+  width: auto;
+  top: 40%;
+  left: 30%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    height: 500px;
+    top: 40%;
+    left: 30%;
+    opacity: 1;
+  }
+  to {
+    transform: rotate(359deg);
+    height: 100px;
+    top: 10%;
+    left: 45%;
+    opacity: 0;
+  }
+}
+
+#rabbit {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+/* http://www.javascriptkit.com/dhtmltutors/css3-animation-swing.shtml */
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-1deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-1deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
