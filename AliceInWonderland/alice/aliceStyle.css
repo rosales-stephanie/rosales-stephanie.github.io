@@ -50,6 +50,14 @@ html {
   width: auto;
 }
 
+#rabbit {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
 /* http://www.javascriptkit.com/dhtmltutors/css3-animation-swing.shtml */
 @-webkit-keyframes swinging{
     0%{-webkit-transform: rotate(10deg);}
